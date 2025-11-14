@@ -1,0 +1,314 @@
+@charset "UTF-8";
+/*
+Theme Name:     Astra Child
+Template:       astra
+Version:        0.0.1
+Author:         Kamil Błoński
+Author URI:     https://github.com/kbloski
+Description:    It work only in preview fronted app. Good Life 😁
+License:        GNU General Public License v2 or later
+Tags:           custom, child theme
+*/
+
+
+:root {
+/* 
+    --ast-global-color-0: ;
+    --ast-global-color-1: ;
+    --ast-global-color-2: ;
+    --ast-global-color-3: ;
+    --ast-global-color-4: ;
+    --ast-global-color-5: ;
+    --ast-global-color-6: ;
+    --ast-global-color-7: ;
+    --ast-global-color-8: ; 
+  */
+  --box-shadow-astra-child: 0 4px 6px rgba(0,0,0,0.12);
+}
+
+/* button , a {
+	border-radius: 0 !important;
+}
+ */
+
+/* Custom classes */
+/* .btn-secondary > .elementor-widget-container > .elementor-button-wrapper > *{
+  background: var(--ast-global-color-5);
+  border-color: var(--ast-global-color-0);
+  color: var(--ast-global-color-0);
+}
+
+.btn-secondary > .elementor-widget-container > .elementor-button-wrapper > *:hover{
+  background: var(--ast-global-color-1);
+  color: var(--ast-global-color-4); */
+/* } */
+
+body {
+  padding: 0 !important;
+}
+
+/* Primary menu */
+.main-header-bar {
+  box-shadow: var(--box-shadow-astra-child) !important;
+}
+
+  /* 
+
+.ast-primary-header-bar {
+	padding: 0 1rem !important;	
+}
+
+.site-header-section .ast-custom-button-link .ast-custom-button {
+  color: var(--ast-global-color-2) !important;
+}
+
+.site-branding.ast-site-identity .site-title a,
+.ast-theme-transparent-header .site-title a
+{
+  color: var(--ast-global-color-0) !important;
+}
+
+.ast-theme-transparent-header .site-title a:hover,
+.site-branding.ast-site-identity .site-title a:hover {
+  color: var(--ast-global-color-1) !important;
+}
+
+ */
+
+
+/* Image slider */
+/* .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal 
+{
+  bottom: 0;
+  transform: translate(0, 50%);
+}
+
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal > span 
+{
+  border-radius: 0;
+  margin: 0;
+  height: 4px;
+  width: 1.5rem;
+}
+
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal > span:first-child {
+  border-radius: 1rem 0 0 1rem !important;
+}
+
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal > span:last-child {
+  border-radius: 0 1rem 1rem 0 !important;
+} */
+
+
+/* Akordeon */
+
+/* .e-n-accordion > * {
+  border: unset;
+}
+
+.e-n-accordion .e-n-accordion-item-title {
+  margin: 4px 0;
+  border-radius: 5px;
+  border-style: unset !important;
+  background: var(--ast-global-color-5) !important;
+}
+
+
+.e-n-accordion .e-n-accordion-item-title + div {
+  border: none !important;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Koszyk */
+.wc-empty-cart-message + .return-to-shop {
+  padding: 2rem 0 !important;
+}
+
+
+/* Kasa - checkout summary */
+
+.woocommerce {
+  padding-top: 2rem;
+}
+
+.woocommerce-info {
+  display: none !important;
+}
+
+.woocommerce-input-wrapper *,
+.woocommerce-billing-fields__field-wrapper  input,
+#order_comments_field > .woocommerce-input-wrapper > .input-text 
+{
+  border-radius: 4px !important;
+  border: none !important;
+  color: var(--ast-global-color-2) !important;
+  background: var(--ast-global-color-5) !important;
+}
+
+
+
+/* Dane rozliczeniowe */
+
+.woocommerce-billing-fields__field-wrapper #billing_company_field,
+[data-automation-id="woo-commerce-subscription-opt-in"]
+{
+  display: none !important;
+}
+
+h3 {
+  border-width: 0 !important;
+  /* border-width: 0 0 2px 0 !important; */
+}
+
+
+
+
+
+/* Review table */
+#order_review {
+  padding: 0 !important;
+  border: none !important;
+}
+
+.shop_table.woocommerce-checkout-review-order-table td,
+.shop_table.woocommerce-checkout-review-order-table th 
+{
+  display: block;
+  border: none !important;
+}
+
+.shop_table.woocommerce-checkout-review-order-table > * > tr {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--ast-global-color-7);
+}
+
+.shop_table.woocommerce-checkout-review-order-table > * > tr > th {
+  min-width: 100px;
+}
+
+
+
+
+/* Shipping */
+tr.woocommerce-shipping-totals.shipping 
+{
+  flex-direction: column;
+}
+
+.tr.woocommerce-shipping-totals.shipping th,
+.tr.woocommerce-shipping-totals.shipping td {
+  width: 100%;
+}
+
+
+#shipping_method {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+#shipping_method li {
+  width: 100% !important;
+  display: flex;
+  justify-content: space-between;
+  
+  margin: 5px 0 0 0 !important; 
+  padding: 4px 1rem !important;
+  background: var(--ast-global-color-5);
+}
+
+#shipping_method li input {
+  display: none;
+}
+
+#shipping_method li label {
+  cursor: pointer;
+  width: 100% !important;
+}
+
+#shipping_method li input:checked + label {
+  /* color: var(--ast-global-color-3); */
+  padding: 4px;
+  color: white;
+  border-right: 5px solid var(--ast-global-color-8);
+  background-color: var(--ast-global-color-0);
+}
+
+
+/* InPost  */
+#shipping_method li:nth-child(3)
+{
+  flex-wrap: wrap;
+}
+
+#shipping_method li > div {
+  width: 100%;
+}
+
+.btn.button.select-paczkomat-button {
+  margin-top: 2rem;
+  padding: 0;
+  background-color: transparent !important;
+  text-decoration: underline;
+  color: var(--ast-global-color-0) !important;
+}
+
+
+.order-total {
+  color: var(--ast-global-color-2);
+}
+
+.order-total td {
+  font-size: 1.5em !important;
+  font-weight: bolder !important;
+}
+
+
+.payment_box.payment_method_cod {
+  display: none !important;
+}
+
+
+.validate-required 
+{
+  cursor: pointer;
+  margin: 1.5rem 0 !important;
+}
+
+button#place_order {
+/*   font-style: italic; */
+  letter-spacing: .5px;
+  font-weight: bolder;
+  color: white;  
+  transition: all .3s ease;
+}
+
+
+button#place_order:hover {
+  background-color: var(--ast-global-color-8);
+  color: var(--ast-global-color-3);
+}
+
+.payment_method_hotpay_gateway_blik img {
+	max-height: 25px;
+}
+
+
