@@ -22,6 +22,7 @@ function child_theme_enqueue_styles() {
 add_action( 'wp_enqueue_scripts', 'child_theme_enqueue_styles' );
 
 
+
 // Dodaj pasek promo na górze strony w WordPressie
 add_action('wp_head', 'swiateczny_pasek_promo');
 

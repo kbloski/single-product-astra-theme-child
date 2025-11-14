@@ -1,15 +1,17 @@
 @charset "UTF-8";
+@import url("layout-styles.css");
+
+
 /*
 Theme Name:     Astra Child
 Template:       astra
-Version:        0.0.1
+Version:        0.0.3
 Author:         Kamil Błoński
 Author URI:     https://github.com/kbloski
 Description:    It work only in preview fronted app. Good Life 😁
 License:        GNU General Public License v2 or later
 Tags:           custom, child theme
 */
-
 
 :root {
 /* 
@@ -26,54 +28,8 @@ Tags:           custom, child theme
   --box-shadow-astra-child: 0 4px 6px rgba(0,0,0,0.12);
 }
 
-/* button , a {
-	border-radius: 0 !important;
-}
- */
 
-/* Custom classes */
-/* .btn-secondary > .elementor-widget-container > .elementor-button-wrapper > *{
-  background: var(--ast-global-color-5);
-  border-color: var(--ast-global-color-0);
-  color: var(--ast-global-color-0);
-}
 
-.btn-secondary > .elementor-widget-container > .elementor-button-wrapper > *:hover{
-  background: var(--ast-global-color-1);
-  color: var(--ast-global-color-4); */
-/* } */
-
-body {
-  padding: 0 !important;
-}
-
-/* Primary menu */
-.main-header-bar {
-  box-shadow: var(--box-shadow-astra-child) !important;
-}
-
-  /* 
-
-.ast-primary-header-bar {
-	padding: 0 1rem !important;	
-}
-
-.site-header-section .ast-custom-button-link .ast-custom-button {
-  color: var(--ast-global-color-2) !important;
-}
-
-.site-branding.ast-site-identity .site-title a,
-.ast-theme-transparent-header .site-title a
-{
-  color: var(--ast-global-color-0) !important;
-}
-
-.ast-theme-transparent-header .site-title a:hover,
-.site-branding.ast-site-identity .site-title a:hover {
-  color: var(--ast-global-color-1) !important;
-}
-
- */
 
 
 /* Image slider */
