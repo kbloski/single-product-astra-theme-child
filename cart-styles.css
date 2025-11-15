@@ -17,6 +17,12 @@
 }
 
 
+.shop_table.cart  .actions button:disabled {
+    display: none !important;
+}
+
+
+
 
 
 /**
@@ -169,6 +175,9 @@ tr.woocommerce-shipping-totals.shipping
 
 button#place_order {
 /*   font-style: italic; */
+ box-shadow: var(--box);
+  padding: 1rem;
+  font-size: 1.5rem;
   letter-spacing: .5px;
   font-weight: bolder;
   color: white;  

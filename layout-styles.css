@@ -12,6 +12,8 @@ body {
 .ast-primary-header-bar.ast-primary-header.main-header-bar
 {
   box-shadow: var(--box-shadow-astra-child) !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
 }
 
 .ast-primary-header-bar.ast-primary-header.main-header-bar > div

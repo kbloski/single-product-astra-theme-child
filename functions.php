@@ -29,26 +29,39 @@ add_action( 'wp_enqueue_scripts', 'child_theme_enqueue_styles' );
 /**
  * Promo pasek
  */
-add_action('wp_head', 'swiateczny_pasek_promo');
-function swiateczny_pasek_promo() {
+add_action('wp_head', function() {
     ?>
-    <!-- Pasek promo Świąteczny -->
-    <div style="background-color: #E11D48; color: white; padding: 8px 0; overflow: hidden; white-space: nowrap; text-align: center; font-weight: 600; font-size: 0.875rem;">
-        <div style="display: inline-block; animation: marquee 18s linear infinite;">
+    <div class="promo-marquee-wrapper">
+        <div class="promo-marquee">
             🎁 Darmowa dostawa od 149 PLN • ✨ 30 dni zwrotu • 🎅 Wysyłka w 24h • 🎄 Limitowana edycja
         </div>
     </div>
 
-    <!-- Animacja marquee -->
     <style>
-    @keyframes marquee {
-        0% { transform: translateX(100%); }
-        100% { transform: translateX(-100%); }
-    }
+        .promo-marquee-wrapper {
+            background:#E11D48;
+            color:#fff;
+            padding:8px 0;
+            font-weight:600;
+            font-size:0.9rem;
+            overflow:hidden;
+            white-space:nowrap;
+            position:relative;
+        }
+
+        .promo-marquee {
+            display:inline-block;
+            padding-left:100%;
+            animation: marquee 18s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
     </style>
     <?php
-}
-
+});
 
 
 
