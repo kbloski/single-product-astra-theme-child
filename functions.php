@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * Loading styles
+ */
 function child_theme_enqueue_styles() {
     // Styl rodzica
     wp_enqueue_style(
@@ -16,16 +19,17 @@ function child_theme_enqueue_styles() {
         'child-style',
         get_stylesheet_directory_uri() . '/style.css',
         array('parent-style'),
-        $child_version // ← kluczowy element
+        $child_version
     );
 }
 add_action( 'wp_enqueue_scripts', 'child_theme_enqueue_styles' );
 
 
 
-// Dodaj pasek promo na górze strony w WordPressie
+/**
+ * Promo pasek
+ */
 add_action('wp_head', 'swiateczny_pasek_promo');
-
 function swiateczny_pasek_promo() {
     ?>
     <!-- Pasek promo Świąteczny -->
@@ -44,6 +48,24 @@ function swiateczny_pasek_promo() {
     </style>
     <?php
 }
+
+
+
+
+/**
+ *  Zmiana symbolu waluty "zł" na "PLN"
+ */
+add_filter( 'woocommerce_currency_symbol', 'replace_zl_with_pln', 10, 2 );
+function replace_zl_with_pln( $currency_symbol, $currency ) {
+    // Sprawdzenie, czy waluta to PLN i czy symbol to "zł"
+    if ( 'PLN' === $currency ) {
+        return 'PLN'; // Zmiana symbolu waluty na "PLN"
+    }
+
+    return $currency_symbol; // Pozostawienie innych walut bez zmian
+}
+
+
 
 
 

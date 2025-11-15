@@ -1,0 +1,186 @@
+
+/**
+ * Koszyk-1 
+ */
+.cart_totals .woocommerce-shipping-totals.shipping td {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart_totals .woocommerce-shipping-totals.shipping td::before {
+    text-align: left;
+}
+
+.cart_totals .woocommerce-shipping-totals.shipping .woocommerce-shipping-destination,
+.cart_totals .woocommerce-shipping-totals.shipping .woocommerce-shipping-calculator {
+    display: none;
+}
+
+
+
+
+/**
+ * Koszyk-2
+ */
+.woocommerce-billing-fields__field-wrapper #billing_company_field,
+[data-automation-id="woo-commerce-subscription-opt-in"]
+{
+  display: none !important;
+}
+
+h3 {
+  border-width: 0 !important;
+  /* border-width: 0 0 2px 0 !important; */
+}
+
+
+
+
+
+/* Review table */
+#order_review {
+  padding: 0 !important;
+  border: none !important;
+}
+
+.shop_table.woocommerce-checkout-review-order-table td,
+.shop_table.woocommerce-checkout-review-order-table th 
+{
+  display: block;
+  border: none !important;
+}
+
+.shop_table.woocommerce-checkout-review-order-table > * > tr {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--ast-global-color-7);
+}
+
+.shop_table.woocommerce-checkout-review-order-table > * > tr > th {
+  min-width: 100px;
+}
+
+
+
+
+/* Shipping */
+tr.woocommerce-shipping-totals.shipping 
+{
+  flex-direction: column;
+}
+
+.tr.woocommerce-shipping-totals.shipping th,
+.tr.woocommerce-shipping-totals.shipping td {
+  width: 100%;
+}
+
+
+/* #shipping_method {
+    display: flex !important;
+    flex-direction: column !important;
+} */
+
+#shipping_method li {
+    width: 100% !important;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    text-indent: unset !important;
+    
+    margin: 5px 0 0 0 !important; 
+    padding: 4px 1rem !important;
+    background: var(--ast-global-color-5);
+}
+
+#shipping_method li input {
+  display: none;
+}
+
+#shipping_method li label {
+    display: flex !important;
+    justify-content: space-between  ;
+    cursor: pointer;
+    width: 100% !important;
+    text-align: left !important;
+}
+
+#shipping_method li input:checked + label {
+  padding: 4px;
+  color: white;
+  border-right: 5px solid var(--ast-global-color-8);
+  background-color: var(--ast-global-color-0); 
+}
+/*
+
+*/
+
+
+
+
+
+
+
+
+/* InPost  */
+#shipping_method li:nth-child(3)
+{
+  flex-wrap: wrap;
+}
+
+#shipping_method li > div {
+  width: 100%;
+}
+
+.btn.button.select-paczkomat-button {
+  margin-top: 2rem;
+  padding: 0;
+  background-color: transparent !important;
+  text-decoration: underline;
+  color: var(--ast-global-color-0) !important;
+}
+
+
+
+
+
+
+
+
+.order-total {
+  color: var(--ast-global-color-2);
+}
+
+.order-total td {
+  font-size: 1.5em !important;
+  font-weight: bolder !important;
+}
+
+
+.payment_box.payment_method_cod {
+  display: none !important;
+}
+
+
+.validate-required 
+{
+  cursor: pointer;
+  margin: 1.5rem 0 !important;
+}
+
+button#place_order {
+/*   font-style: italic; */
+  letter-spacing: .5px;
+  font-weight: bolder;
+  color: white;  
+  transition: all .3s ease;
+}
+
+
+button#place_order:hover {
+  background-color: var(--ast-global-color-8);
+  color: var(--ast-global-color-3);
+}
+
+.payment_method_hotpay_gateway_blik img {
+	max-height: 25px;
+}
